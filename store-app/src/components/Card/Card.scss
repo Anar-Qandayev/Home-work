@@ -1,0 +1,22 @@
+.card {
+    width: 250px;
+    height: 300px;
+    margin: 10px 7px;
+    border:none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+    h1{
+        font-size: 22px;
+    }
+}

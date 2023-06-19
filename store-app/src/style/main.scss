@@ -1,0 +1,41 @@
+// ? component
+@import "../components/Header/Header.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Card/Card.scss";
+@import "../components/Button/Button.scss";
+@import "../components/Form/Form.scss";
+@import "../pages/Home/Home.scss";
+@import "../pages/Products/Products.scss"; 
+@import "../pages/Login/Login.scss";
+@import "../pages/Dashboard/Dashboard.scss";
+@import "../pages/ProductDetails/ProductDetails.scss";
+@import "../components/CardDetails/CardDetail.scss";
+
+// ? All style
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: antiquewhite;
+    main{
+        width: 100%;
+        padding: 50px 100px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .btnClick {
+            width: 80%;
+            height: 10vh;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+}
