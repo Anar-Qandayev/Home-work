@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+
+
+function Home( ) {
   const navigate = useNavigate();
   const [count, setCount] = useState(0);
   const decrement = () => {
@@ -27,7 +29,8 @@ function Home() {
       setData(res.data.data);
     })
   };
-
+  
+  
   return (
     <div className="home">
       <div className="btnClick">
@@ -39,6 +42,7 @@ function Home() {
           -
         </button>
       </div>
+      
       <div className="table">
         <table>
           <thead>
@@ -53,7 +57,7 @@ function Home() {
             </tr>
           </thead>
           <tbody>
-            { data.map((item) =>{
+            { data.map((item)=>{
               if(typeof item.title !== "undefined"){
                 return(
                   <tr key={item.id}>

@@ -49,7 +49,7 @@ const ExpandMore = styled((props) => {
           </IconButton>
         }
         title={category}
-        subheader={price + " " + "$"} 
+        subheader={price +" $"} 
       />
       <CardMedia
         className='img'

@@ -5,6 +5,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    .search{
+      background-color:#3b8fe3;
+      padding-bottom: 5;
+      h2{
+        color:#c90e0e;
+      }
+    }
     .table{
         width: 100%;
         height: auto;

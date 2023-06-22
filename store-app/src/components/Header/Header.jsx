@@ -15,7 +15,7 @@
             alt="logoImage"/>
          </div>
          <ul className="ul2">
-           <li> About</li>
+           <li><Link to="/about">About</Link> </li>
            <li> Contact</li>
            <li><Link to="/login">Login</Link> </li> 
          </ul>

@@ -360,7 +360,7 @@ app.delete("/delete-data/:id", (request, response) => {
   });
 });
 
-const PORT = 3009;
+const PORT = 3002;
 
 app.listen(PORT, () => {
   console.log(`Start server on  http://localhost:${PORT} !`);
