@@ -38,9 +38,9 @@ const Form = () => {
 
   const imageUpload = async (e) => {
     const file = e.target.files[0];
-    const base64 = await convertBase64(file); // Dosya verilerini base64 formatına dönüştürüyoruz
+    const base64 = await convertBase64(file); 
     setProfileImg(base64);
-    setData({ ...data, [e.target.name]: base64 }); // Base64 verilerini `data` içine yerleştiriyoruz
+    setData({ ...data, [e.target.name]: base64 });
   };
 
   const onHandleChange = (e) => {
