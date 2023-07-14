@@ -7,9 +7,12 @@ import About from "./pages/About/About.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Products from "./pages/Products/Products.jsx";
 import Login from "./pages/Login/Login.jsx";
+import Counter from "./components/Counter/Counter";
 import Dashboard from "./pages/Dashboard/Dashboard.jsx"; 
+import Basket from "./pages/Basket/Basket.jsx"; 
 import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx"; 
 import jwt_decode from "jwt-decode";
+
 
 function App() { 
   const [user,setUser]=useState(null);
@@ -44,8 +47,11 @@ function App() {
           <Route path="/products" element={<Products />}/>
           <Route path="/form" element={<Form />}/>
           <Route path="/about" element={<About />}/>
+          <Route path="/counter" element={<Counter/>}/>
+          <Route path="/basket" element={<Basket/>}/>
         </Routes> 
       </main>
+      
       <Footer />
     </div>
   );

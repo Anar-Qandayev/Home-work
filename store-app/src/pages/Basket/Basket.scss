@@ -1,0 +1,28 @@
+.basket{
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .basket-product{
+        width: 100%;
+        padding: 50px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

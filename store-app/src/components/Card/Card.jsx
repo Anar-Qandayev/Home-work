@@ -1,6 +1,8 @@
 import React from "react";
 import "../../style/main.scss";
 import Button from "../Button/Button";
+import { useDispatch } from 'react-redux';
+import { addToBasket } from '../../redux/slices/addToBasketSlice';
 
 const Card = ({ data }) => {
   const clickedButton = () => {
@@ -9,6 +11,11 @@ const Card = ({ data }) => {
 
   const { title, image, description, price } = data;
 
+  const dispatch=useDispatch();
+
+  const handleAddToBasket=()=>{
+    dispatch(addToBasket(data));
+  }
   return (
     <div className="card">
       <img src={image} alt="" />
@@ -18,6 +25,7 @@ const Card = ({ data }) => {
         {price} <span>AZN</span>
       </h3>
       <Button className="primary" text="Read More" onClick={clickedButton} />
+      <button className="secondary" onClick={handleAddToBasket}>Add</button>
     </div>
   );
 };

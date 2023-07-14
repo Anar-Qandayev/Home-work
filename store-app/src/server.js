@@ -351,7 +351,7 @@ app.put("/update-data/:id", (request, response) => {
 
 app.delete("/delete-data/:id", (request, response) => {
   const id = request.params.id; 
-  let userItem = userDataBase.findIndex((user) => user.id === id);
+  let userItem = userDataBase.findIndex((user) => user.id === Number(id));
   userDataBase.splice(userItem, 1);
   response.status(201).send({
     success: "OK",
@@ -360,7 +360,7 @@ app.delete("/delete-data/:id", (request, response) => {
   });
 });
 
-const PORT = 3002;
+const PORT = 3009;
 
 app.listen(PORT, () => {
   console.log(`Start server on  http://localhost:${PORT} !`);
